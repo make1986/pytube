@@ -45,8 +45,10 @@ _default_clients = {
         'context': {
             'client': {
                 'clientName': 'ANDROID',
-                'clientVersion': '17.31.35',
-                'androidSdkVersion': 30
+                # 'clientVersion': '17.31.35',
+                # 'androidSdkVersion': 30,
+                'clientVersion': '19.08.35',
+                'androidSdkVersion': 32
             }
         },
         'header': {
@@ -232,7 +234,7 @@ _token_file = os.path.join(_cache_dir, 'tokens.json')
 
 class InnerTube:
     """Object for interacting with the innertube API."""
-    def __init__(self, client='ANDROID_MUSIC', use_oauth=False, allow_cache=True):
+    def __init__(self, client='ANDROID', use_oauth=False, allow_cache=True):
         """Initialize an InnerTube object.
 
         :param str client:
